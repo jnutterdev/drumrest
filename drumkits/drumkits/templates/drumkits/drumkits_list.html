@@ -1,0 +1,10 @@
+<h1>All drumkits</h1>
+
+{% for drumkit in object_list %}
+<ul>
+    <li>Sound: {{ drumkit.sound }}</li>
+    <li>URL: {{ drumkit.url }}</li>
+    <li>Library: {{ drumkit.library }}</li>
+    <li>Category: {{ drumkit.category }}</li>
+</ul>
+{% endfor %}
